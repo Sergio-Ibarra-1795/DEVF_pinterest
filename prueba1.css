@@ -1,0 +1,38 @@
+.matriz{
+    margin: 80px 0px 0px 0px;
+    columns: 6 220px;
+    column-gap: 1px;
+    background-color: black;
+}
+.S{
+    outline: 2px solid white;
+    outline-offset: -10px;
+    border-radius: 15px;
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 420px) {
+
+.matriz{
+    margin: 80px 0px 0px 0px;
+    columns: 3 400px;
+    column-gap: 1px;
+    background-color: black;
+}
+
+
+.S{
+    outline: 2px solid white;
+    outline-offset: -10px;
+    border-radius: 15px;
+}
+
+.barra_busqueda>input{
+    display: inline-block;
+    border-radius: 25px;
+    padding: 7px 45px;
+    width: 25vw;
+    background-color: rgb(218, 210, 210);
+}
+
+}
