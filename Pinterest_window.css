@@ -41,7 +41,7 @@ h4{
 .home>button{
     display: inline-block;
     background-color: black;
-    border-radius: 25%;
+    border-radius: 25px;
     border-color: black;
     color: white;
 }
@@ -59,8 +59,15 @@ h4{
     background-color: rgb(218, 210, 210);
 }
 
+.InputComment{
+    height: 50px;
+    width: 400px;
+    display: block;
+   
+}
 
-.izquierda{
+
+.IconosIzquierda{
     display: inline-block;
 }
 
@@ -103,6 +110,7 @@ h4{
     width: 100%;
     border: 3px solid greenyellow;
     border-radius: 10%;
+    object-fit: cover;
 }
 
 
@@ -111,6 +119,7 @@ h4{
     width: 100%;
     border: 3px solid greenyellow;
     border-radius: 10%;
+    object-fit: cover;
 }
 
     
@@ -119,6 +128,7 @@ h4{
     width: 100%;
     border: 3px solid greenyellow;
     border-radius: 10%;
+    object-fit: cover;
 }
 
 

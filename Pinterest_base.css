@@ -47,7 +47,7 @@ body {
     background-color: rgb(218, 210, 210);
 }
 
-.izquierda{
+.IconosIzquierda{
     display: inline-block;
 }
 
@@ -66,12 +66,17 @@ body {
     width: 97%;
 }
 
+.Card img:hover {
+    opacity: 0.5 ;
+
+}
 
 .S1{
 height: 100%;
 width: 100%;
 border: 3px solid greenyellow;
 border-radius: 10%;
+object-fit: cover;
 }
 
 
@@ -89,6 +94,7 @@ border-radius: 10%;
     width: 100%;
     border: 3px solid greenyellow;
     border-radius: 10%;
+    object-fit: cover;
     }
 
 .S3Container {
