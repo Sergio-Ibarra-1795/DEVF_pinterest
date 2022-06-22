@@ -12,7 +12,7 @@ body {
     height: 80px;
     flex-direction: row;
     justify-content: space-around;
-    background-color:whitesmoke;
+    background-color:rgba(255, 255, 255, 0.979);
     align-items: center;
     position: fixed;
     z-index: 1;
@@ -48,9 +48,11 @@ body {
 }
 
 .IconosIzquierda{
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
 }
-
 
 
 .ImagesContainer{

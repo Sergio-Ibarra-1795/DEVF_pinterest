@@ -1,12 +1,32 @@
 body {
     width: 1350px;
-   
+    background-color: #000000ee;
 }
+
+
+
+h2 {
+    color: white;
+}
+
+h3 {
+    color: white;
+}
+
 h4{
     margin-block-end: 0px;
     margin-block-start: 0px;
+    color: white;
 }
 
+h5 {
+    color: white;
+}
+
+
+p {
+    color: white;
+}
 
 .FullContainer {
     width: 95%;
@@ -22,7 +42,7 @@ h4{
     height: 80px;
     flex-direction: row;
     justify-content: space-around;
-    background-color:whitesmoke;
+    background-color:rgba(128, 128, 128, 0.849);
     align-items: center;
     position: fixed;
     z-index: 1;
@@ -34,8 +54,8 @@ h4{
     display: inline-block;
     font-style: oblique;
     color: aqua;
-    
 }
+
 
 
 .home>button{
@@ -45,6 +65,7 @@ h4{
     border-color: black;
     color: white;
 }
+
 
 .barra_busqueda{
     width: 50%;
@@ -59,16 +80,12 @@ h4{
     background-color: rgb(218, 210, 210);
 }
 
-.InputComment{
-    height: 50px;
-    width: 400px;
-    display: block;
-   
-}
-
 
 .IconosIzquierda{
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
 }
 
 
@@ -76,16 +93,41 @@ h4{
 
     display: flex;
     flex-direction: row;
-    border: 2px solid blue;
+    border: 2px solid rgba(128, 128, 128, 0.363);
     margin-top: 100px;
+    width: 55%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.ClickDetailImage {
+    width: 50%;
+    height: auto;
 }
 
 
 .ClickDetailRight {
-
     display: flex;
     flex-direction: column;
     border: 2px solid orangered;
+    width: 50%;
+    height: auto;
+}
+
+.ClickDetailRightIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+
+}
+
+.InputComment{
+    height: 100%;
+    width: 95%;
+    display: block;
+   
 }
 
 
@@ -108,6 +150,8 @@ h4{
     opacity: 0.5 ;
 
 }
+
+
 
 .CardIcon img:hover {
     opacity: 0.5 ;
