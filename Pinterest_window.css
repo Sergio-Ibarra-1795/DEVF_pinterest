@@ -104,6 +104,17 @@ h4{
     width: 97%;
 }
 
+.Card img:hover {
+    opacity: 0.5 ;
+
+}
+
+.CardIcon img:hover {
+    opacity: 0.5 ;
+    alt:inherit;
+}
+
+
 
 .S1{
     height: 100%;

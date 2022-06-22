@@ -51,6 +51,8 @@ body {
     display: inline-block;
 }
 
+
+
 .ImagesContainer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -69,6 +71,11 @@ body {
 .Card img:hover {
     opacity: 0.5 ;
 
+}
+
+.CardIcon img:hover {
+    opacity: 0.5 ;
+    alt:inherit;
 }
 
 .S1{
