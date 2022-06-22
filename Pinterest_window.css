@@ -123,6 +123,14 @@ p {
 
 }
 
+.ClickDetailRightIcons>button{
+    display: inline-block;
+    background-color: red;
+    border-radius: 25px;
+    border-color: red;
+    color: white;
+}
+
 .InputComment{
     height: 100%;
     width: 95%;
