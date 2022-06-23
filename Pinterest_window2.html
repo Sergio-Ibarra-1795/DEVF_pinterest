@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Pinterest_base2.css">
-    <title>Pinterest base</title>
+    <link rel="stylesheet" href="Pinterest_window2.css">
+    <title>Pinterest Window</title>
     <script src="https://kit.fontawesome.com/0ab2e3c60c.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
+ <div class="FullContainer">
+
     <div class="top">
 
         <div class="PintLogo">
@@ -22,22 +25,76 @@
             <button>Today</button>
         </div>
 
+
         <div class="barra_busqueda">
             <i class='fa-solid fa-magnifying-glass' style='font-size:28px;color:gray'></i>
            <input type="text" placeholder="Search" class="TextPlaceholder">
         </div>
 
         <div class="CardIcon IconosIzquierda">
-            <i class='fa-solid fa-bell' style='font-size:28px;color:gray'></i>
-            <i class='fa-solid fa-comment-dots' style='font-size:28px;color:gray' ></i> 
-            <i class='fa-solid fa-user' style='font-size:28px;color:gray' ></i>
-            <i class='fa-solid fa-angle-down' style='font-size:28px;color:gray'></i>
+            <i class='fa-solid fa-bell' style='font-size:28px;color:black'></i>
+            <i class='fa-solid fa-comment-dots' style='font-size:28px;color:black' ></i> 
+            <i class='fa-solid fa-user' style='font-size:28px;color:black' ></i>
+            <i class='fa-solid fa-angle-down' style='font-size:28px;color:black'></i>
         </div>
 
+    <!-- </div class Top> -->
     </div>
 
 
-     <div class="ImagesContainer">
+    <div class="ClickDetail"> 
+
+        <a href="file:///C:/Users/llell/Documents/SIR_Personal/DEVF_master_lanix/DVF_LanixShared/Projects/PinteresProject_Lanix/DEVF_pinterest/Pinterest_base.html"> 
+            <i class='fas fa-arrow-alt-circle-left' style='font-size:28px;color:red'></i>
+        </a>
+        <!-- Para enlazar botton de back to home con el enlace de la página Pinterest_base -->
+
+        <img class="ClickDetailImage" src="https://picsum.photos/200/300">
+
+        <div class="ClickDetailRight">
+
+        <div class="ClickDetailRightIcons"> 
+            <div class="ClickDetailRightIconsOne"> 
+            <i class='fa-solid fa-ellipsis' style='font-size:28px;color:red'></i>
+            <i class='fas fa-caret-square-up' style='font-size:28px;color:red'></i> 
+            <i class='fa-solid fa-link' style='font-size:28px;color:red'></i>
+            </div>
+
+
+        <div class="ClickDetailRightIconsTwo"> 
+                <div class="ClickDetailRightIconsTwoP">
+            <button>Pofile</button>
+            <i class='fa-solid fa-angle-down' style='font-size:28px;color:gray'></i>
+                </div>
+            <button>Save</button>
+        </div>
+
+
+        </div>
+
+ 
+        <h3>Uploaded by Team 1 B-18</h3>
+        <img src="https://devf.mx/wp-content/uploads/2021/12/logo-devf.png" height="40px" width="100px">
+        <br>
+        <h2>This is a random Picture </h2>
+        <br>
+        <p>Lorem Ipsus </p>
+        <div> 
+            <input class="InputComment"  type="text" placeholder="Add a comment" style= 'color:white'>
+            <span style='font-size:40px;'>&#128516;</span>
+     
+        </div>
+
+          <!-- </div class ClickDetailRight> -->
+        </div>  
+
+   <!-- </div class ClickDetail> -->
+    </div>
+
+
+    
+    <h3>More like this</h3>
+    <div class="pin_container">
 
         <div class="Card">
         <img class="S1" src="https://picsum.photos/200/300"> 
@@ -148,9 +205,13 @@
             <img class="S2" src="https://picsum.photos/200/296">
         </div>
 
-     <!-- </div class ImageContainer> -->
+     <!-- </div class pin_container> -->
     </div>
-</div>
+
+     <!-- </div class FullContainerr> -->
+ </div>
+
+
 
 </body>
 </html>

@@ -32,7 +32,7 @@ body {
     border-radius: 25px;
     color: white;
     font-size: 16px;
-    padding: 15px 16px;
+    padding: 5px 6px;
 }
 
 .home>a>button{
@@ -41,11 +41,15 @@ body {
     border-radius: 25px;
     color: white;
     font-size: 16px;
-    padding: 15px 16px;
+    padding: 5px 6px;
 }
 
 .barra_busqueda{
-    width: 50%;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .barra_busqueda>input{
@@ -53,8 +57,10 @@ body {
     border-radius: 25px;
     padding: 7px 45px;
     width: 90%;
-    background-color: rgb(218, 210, 210);
+    background-color: whitesmoke;
+    flex-direction: row;
 }
+
 
 .IconosIzquierda{
     display: flex;
@@ -68,9 +74,9 @@ body {
     --Card_width: 250px;
     --Row_increment: 10px;
     --Card_border_radius: 16px;
-    --S3: 26;
-    --S2: 33;
-    --S1: 45;
+    --S3: 20;
+    --S2: 38;
+    --S1: 55;
 }
 
 .ImagesContainer{
@@ -83,7 +89,7 @@ display: grid;
 /* grid-auto-columns: 0.33fr 0.33fr 0.33fr; */
 grid-template-columns: repeat(auto-fill, var(--Card_width));
 /* grid auto colums creará columnas automáticas en función de nuestros items y sus pixeles  */
-grid-auto-rows: auto;
+grid-auto-rows:var(--Row_increment);
 /* grid-auto-rows: var(--Row_increment); */
 justify-content: center;
 
@@ -95,7 +101,10 @@ background-color: rgb(255, 255, 255);
     padding: 0;
     margin: 15px 10px;
     border-radius: var(--Card_border_radius);
-    background-color: whitesmoke;
+    background-color: white;
+    /* display: flex; */
+    /* flex-direction: row;
+    justify-content: center; */
 }
 
 .Card img:hover {
@@ -103,7 +112,7 @@ background-color: rgb(255, 255, 255);
 
 }
 
-.CardIcon img:hover {
+.CardIcon i:hover {
     opacity: 0.5 ;
 }
 
