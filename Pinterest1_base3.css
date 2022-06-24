@@ -116,6 +116,8 @@ i{
 .card>a{
     border-radius: var(--card_border_radius);
     width: 95%;
+    /*position: relative;
+     Para poder posicionar sobre la imagen */
 }
 
 
@@ -144,6 +146,41 @@ i{
     align-items: center;
 
 }
+
+.Hide {
+    display: none;
+  }
+
+.Hides {
+    display: none;
+  }
+
+.HideDos {
+    display: none;
+  }
+
+  
+  .MyDivDos {
+    height: 200px;
+  }
+
+.MyDiv:hover +.Hide {
+    display: inline;
+    background-color: rgba(255, 0, 0, 0.76);
+    border-radius: 25px;
+    color: white;
+    padding: 8px;
+    border: 1px solid red;
+    transform: translate(180px, -220px);
+  }
+
+  .MyDivDos:hover +.HideDos{
+    display: inline;
+    color: red;
+    transform: translate(30px, -50px);
+  }
+
+
 
 
 .card img:hover {
