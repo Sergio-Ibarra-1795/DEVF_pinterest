@@ -116,8 +116,6 @@ i{
 .card>a{
     border-radius: var(--card_border_radius);
     width: 95%;
-    /*position: relative;
-     Para poder posicionar sobre la imagen */
 }
 
 
@@ -147,9 +145,6 @@ i{
 
 }
 
-.Hide {
-    display: none;
-  }
 
 .Hides {
     display: none;
@@ -164,7 +159,7 @@ i{
     height: 200px;
   }
 
-.MyDiv:hover +.Hide {
+.Hides:hover +.Hide {
     display: inline;
     background-color: rgba(255, 0, 0, 0.76);
     border-radius: 25px;
