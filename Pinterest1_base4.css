@@ -127,17 +127,6 @@ i{
 }
 
 
-/* .card>div{
-    border-radius: var(--card_border_radius);
-    width: 95%;
-}
-
-.card>div>a>img{
-    border-radius: var(--card_border_radius);
-    width: 100%;
-} */
-
-
 .ImageDescription {
 
     display: flex;
@@ -147,11 +136,11 @@ i{
 
 }
 
-/* 
-.card img:hover {
-    opacity: 0.5 ;
-} */
 
+.card img:hover {
+    opacity: 0.5;
+    cursor: zoom-in;
+}
 
 
 .btns {
@@ -171,24 +160,25 @@ i{
 
 
 .btn1 {
+    position: relative;
+    top: -53px;
+    left: -88px;
     opacity: 0;
-    transform: translate(100px, -60px);
+    color: black;
+    font-size: 15px;
+    padding: 5px 10px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius:999px;
+    text-align: center;
 }
 
 
-.GaleryImage:hover {
-    opacity: 0.5;
-}
-
-
-.GaleryImage:hover .btn1{
-    background-color: #bd081d;
-    color: white;
+.card img:hover > .btn1{
+    background-color: #eaeaea;
     opacity: 1;
-    transform: translate(100px, -60px);
 }
-
-
 
 
 
