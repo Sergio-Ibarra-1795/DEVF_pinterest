@@ -1,38 +1,318 @@
-.matriz{
-    margin: 80px 0px 0px 0px;
-    columns: 6 220px;
-    column-gap: 1px;
+body {
+    width:auto;
+}
+
+p{ 
+    display: inline;
+    font-size: 12px;
+}
+
+i{
+    display: inline; 
+}
+
+.top{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color:rgba(255, 255, 255, 0.979);
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+
+.PintLogo{
+    display: inline-block;
+    font-style: oblique;
+    color: aqua;
+    
+}
+
+
+.home>button{
+    display: inline-block;
     background-color: black;
+    border-radius: 25px;
+    color: white;
+    font-size: 16px;
+    padding: 5px 6px;
 }
-.S{
-    outline: 2px solid white;
-    outline-offset: -10px;
-    border-radius: 15px;
-}
 
-
-@media screen and (min-width: 0px) and (max-width: 420px) {
-
-.matriz{
-    margin: 80px 0px 0px 0px;
-    columns: 3 400px;
-    column-gap: 1px;
+.home>a>button{
+    display: inline-block;
     background-color: black;
+    border-radius: 25px;
+    color: white;
+    font-size: 16px;
+    padding: 5px 6px;
 }
 
-
-.S{
-    outline: 2px solid white;
-    outline-offset: -10px;
-    border-radius: 15px;
+.barra_busqueda{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .barra_busqueda>input{
     display: inline-block;
     border-radius: 25px;
     padding: 7px 45px;
-    width: 25vw;
-    background-color: rgb(218, 210, 210);
+    width: 90%;
+    background-color: whitesmoke;
+    flex-direction: row;
 }
 
+
+.IconosIzquierda{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
 }
+
+
+:root {
+    --card_width: 250px;
+    --row_increment: 265px;
+    --card_border_radius: 16px;
+    --card_small: 160px;
+    --card_medium: 200px;
+    --card_large: 250px;
+}
+
+
+.pin_container {
+    margin: 80px 0 0 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, var(--card_width));
+    grid-auto-rows: var(--row_increment);
+    justify-content: center;
+
+    background-color: rgb(255, 255, 255);
+}
+
+
+.card {
+    padding: 0;
+    margin: 5px;
+    border-radius: var(--card_border_radius);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    /* Para que todas las imagenes empiecen en la parte superior de card */
+    align-items: center;
+    /* border: 3px solid green; */
+    width: 95%;
+}
+
+
+.card >img{
+    border-radius: var(--card_border_radius);
+    width: 100%;
+    height: var(--card_large) ;
+    /* border: 2px solid orange; */
+}
+
+
+.ImageContainer {
+    /* border: 3px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.card:hover img {
+    opacity: 0.5;
+    cursor: zoom-in;
+}
+
+
+.btns {
+    opacity: 0;
+    transform: translate(150%, -1100%);
+}
+
+
+.card:hover > .btns {
+    background-color: #bd081d;
+    color: white;
+    opacity: 1;
+    transform: translate(100%, -440%);
+
+    font-size: 18px;
+    padding: 8px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.btn1 {
+    opacity: 0;
+    transform: translate(-90%, -270%);
+}
+
+
+.card:hover > .btn1 {
+    background-color: #eaeaea;
+    opacity: 1;
+    transform: translate(-70%, -300%);
+
+    color: black;
+    font-size: 15px;
+    padding: 5px 10px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius:999px;
+    text-align: center;
+}
+
+
+.btn2 {
+    opacity: 0;
+    transform: translate(250%, -520%);
+    height: 20px;
+    width: 33px;
+    color: black;
+}
+
+.btn2>img {
+    transform: translate(-25%, -20%);
+    height: inherit;
+    width: inherit;
+}
+
+
+.card:hover > .btn2 {
+    opacity: 1;
+    transform: translate(130%, -520%);
+    height: 20px;
+    width: 33px;
+    color: black;
+}
+
+
+
+.btn3 {
+    opacity: 0;
+    transform: translate(250%, -620%);
+    height: 20px;
+    width: 33px;
+    color: black;
+}
+
+.btn3>img {
+    transform: translate(-25%, -20%);
+    height: 100%;
+    width: 150%;
+}
+
+.card:hover > .btn3 {
+    opacity: 1;
+    transform: translate(250%, -620%);
+    height: 20px;
+    width: 33px;
+    color: black;
+}
+
+
+.card_small {
+    height: var(--card_small);
+}
+
+.card_small >img{
+    border-radius: var(--card_border_radius);
+    width: 100%;
+    height: var(--card_small) ;
+}
+
+
+
+.card_medium{
+    
+    height: var(--card_medium);
+}
+
+.card_medium>img{
+    border-radius: var(--card_border_radius);
+    width: 100%;
+    height: var(--card_medium);
+    /* border: 2px solid yellow; */
+}
+
+
+
+.card_large {
+    height: var(--card_large) ;
+} 
+
+.card_large >img{
+    border-radius: var(--card_border_radius);
+    width: 100%;
+    height: var(--card_large) ;
+}
+
+
+
+
+    @media screen and (min-width: 0px) and (max-width: 420px) {
+
+        .home>button{
+            display: inline-block;
+            background-color: black;
+            border-radius: 15px;
+            color: white;
+            font-size: 1px;
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        .home>a>button{
+            display: inline-block;
+            background-color: black;
+            border-radius: 15px;
+            color: white;
+            font-size: 1px;
+            padding: 0px;
+            margin: 0px;
+        }
+
+
+        .barra_busqueda{
+            width: 30%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            font-family: "Font Awesome 5 Free"; 
+            font-weight: 900;
+        }
+        
+        .barra_busqueda>input{
+            display: inline-block;
+            border-radius: 25px;
+            padding: 7px 45px;
+            width: 90%;
+            background-color: whitesmoke;
+            flex-direction: row;
+            font-family: "Font Awesome 5 Free"; 
+           font-weight: 900;
+        }
+
+        
+
+    }
+
