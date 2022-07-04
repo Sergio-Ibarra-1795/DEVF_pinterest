@@ -21,12 +21,13 @@ i{
     justify-content: space-around;
 }
 
-.top{
+
+.NavBar{
     display: flex;
     width: 100%;
     height: 80px;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background-color:rgba(255, 255, 255, 0.979);
     align-items: center;
     position: fixed;
@@ -36,13 +37,22 @@ i{
 
 .PintLogo{
     display: inline-block;
-    font-style: oblique;
-    color: aqua;
-    
 }
 
+.PintLogo > img{
+    height: 25px ;
+    width: 30px;
+}
 
-.home>button{
+.LeftButtons {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.HomeButton>a>button{
     display: inline-block;
     background-color: black;
     border-radius: 25px;
@@ -51,41 +61,44 @@ i{
     padding: 5px 6px;
 }
 
-.home>a>button{
+.CreateButton>a>button{
     display: inline-block;
-    background-color: black;
+    background-color: whitesmoke;
     border-radius: 25px;
-    color: white;
+    border: 1px solid white;
+    color: black;
     font-size: 16px;
+    font-weight: bold;
     padding: 5px 6px;
 }
 
-.barra_busqueda{
-    width: 70%;
+
+
+.Searchbar{
+    width: 80%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
-.barra_busqueda>input{
+.Searchbar>input{
     display: inline-block;
     border-radius: 25px;
     padding: 7px 45px;
     width: 90%;
     background-color: whitesmoke;
     flex-direction: row;
-    font-family: "Font Awesome 5 Free"; 
-    font-weight: 900; 
 }
 
 
-.IconosIzquierda{
+.LeftTopIcons{
     display: flex;
     flex-direction: row;
     justify-content:space-around;
     align-items: center;
 }
+
 
 .ClickDetailFull{
     
@@ -129,7 +142,133 @@ i{
     width: 50%;
     height: auto;
     border-radius: 20px;
+    /* border: 3px solid red; */
+    margin-right: 15px;
 }
+
+.ClickDetailImage>img {
+    width: 100%;
+    height: auto;
+    max-height: 490px;
+    border-radius: 20px;
+    /* border: 3px solid greenyellow; */
+}
+
+
+
+.ClickDetailImage:hover {
+    opacity: 0.5;
+    cursor: zoom-in;
+
+}
+
+
+.WbtnLook {
+    opacity: 0;
+    transform: translate(750%, -2200%);
+}
+
+
+.ClickDetailImage:hover > .WbtnLook {
+    background-color: #bd081d;
+    color: white;
+    opacity: 1;
+    transform: translate(500%, -1250%);
+
+    font-size: 18px;
+    padding: 8px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    text-align: center;
+}
+
+
+
+
+.Wbtn1 {
+    opacity: 0;
+    transform: translate(10%, -270%);
+}
+
+
+.ClickDetailImage:hover > .Wbtn1 {
+    background-color: #eaeaea;
+    opacity: 1;
+    transform: translate(-80%, -330%);
+
+    color: black;
+    font-size: 15px;
+    padding: 5px 10px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius:999px;
+    text-align: center;
+}
+
+
+.Wbtn2 {
+    opacity: 0;
+    transform: translate(900%, -220%);
+    height: 20px;
+    width: 33px;
+    color: black;
+}
+
+.Wbtn2>img {
+    transform: translate(-25%, -20%);
+    height: inherit;
+    width: inherit;
+    color: black;
+
+}
+
+
+.ClickDetailImage:hover > .Wbtn2 {
+    opacity: 1;
+    transform: translate(900%, -380%);
+    height: 20px;
+    width: 33px;
+    color: black;
+}
+
+.ClickDetailImage:hover > .Wbtn2>img {
+    opacity: 1;
+    color: black;
+}
+
+
+
+.Wbtn3 {
+    opacity: 0;
+    transform: translate(1100%, -250%);
+    height: 20px;
+    width: 33px;
+    color: black;
+}
+
+.Wbtn3>img {
+    transform: translate(-20%, -1%);
+    height: 100%;
+    width: 150%;
+}
+
+.ClickDetailImage:hover > .Wbtn3 {
+    opacity: 1;
+    transform: translate(1000%, -420%);
+    height: 20px;
+    width: 33px;
+    color: black;
+}
+
+
+.ClickDetailImage:hover > .Wbtn3>img {
+    opacity: 1;
+    color: black;
+}
+
+
 
 
 .ClickDetailRight {
@@ -168,7 +307,7 @@ i{
 
 .ClickDetailRightIconsTwo>button{
     display: inline-block;
-    background-color: rgba(255, 0, 0, 0.76);
+    background-color: #bd081d;
     border-radius: 25px;
     color: white;
     padding: 8px;
@@ -202,7 +341,8 @@ width: 60px;
     font-size:30px;
     }
 
-    :root {
+ 
+:root {
         --card_width: 250px;
         --row_increment: 265px;
         --card_border_radius: 16px;
@@ -212,7 +352,7 @@ width: 60px;
     }
     
     
-    .pin_container {
+.PinContainer {
         margin: 80px 0 0 0;
         padding: 0;
         width: 100%;
@@ -227,7 +367,16 @@ width: 60px;
     }
     
     
-    .card {
+.ImageandDescriptionContainer {
+        /* border: 3px solid red; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    
+    
+.card {
         padding: 0;
         margin: 5px;
         border-radius: var(--card_border_radius);
@@ -242,48 +391,32 @@ width: 60px;
     }
     
     
-    .card >img{
+    
+.card >img{
         border-radius: var(--card_border_radius);
         width: 100%;
-        height: var(--card_large) ;
         /* border: 2px solid orange; */
     }
     
     
-    .ImageContainer {
-        /* border: 3px solid red; */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    
-    }
-    
-    
-
-    .ClickDetail:hover img {
+.card:hover img {
         opacity: 0.5;
         cursor: zoom-in;
     }
     
 
-
-    .card:hover img {
-        opacity: 0.5;
-        cursor: zoom-in;
-    }
-    
-    
-    .btns {
+/* Class btnl correspond to save hover buttons for large cards */
+ .btnl {
         opacity: 0;
-        transform: translate(150%, -1100%);
+        transform: translate(130%, -1040%);
     }
     
     
-    .card:hover > .btns {
+.card:hover > .btnl {
         background-color: #bd081d;
         color: white;
         opacity: 1;
-        transform: translate(100%, -440%);
+        transform: translate(100%, -640%);
     
         font-size: 18px;
         padding: 8px 10px;
@@ -293,13 +426,60 @@ width: 60px;
         text-align: center;
     }
     
-    .btn1 {
+
+    
+/* Class btnm correspond to save hover buttons for medium cards  */
+.btnm {
+        opacity: 0;
+        transform: translate(100%, -800%);
+    }
+    
+.card:hover > .btnm {
+        background-color: #bd081d;
+        color: white;
+        opacity: 1;
+        transform: translate(100%, -500%);
+    
+        font-size: 18px;
+        padding: 8px 10px;
+        border: none;
+        cursor: pointer;
+        border-radius: 30px;
+        text-align: center;
+    }
+    
+    
+    
+/* Class btnmscorrespond to save hover buttons for small cards  */
+    
+.btns {
+        opacity: 0;
+        transform: translate(150%, -1100%);
+    }
+    
+    
+    .card:hover > .btns {
+        background-color: #bd081d;
+        color: white;
+        opacity: 1;
+        transform: translate(100%, -400%);
+    
+        font-size: 18px;
+        padding: 8px 10px;
+        border: none;
+        cursor: pointer;
+        border-radius: 30px;
+        text-align: center;
+    }
+    
+    
+.btn1 {
         opacity: 0;
         transform: translate(-90%, -270%);
     }
     
     
-    .card:hover > .btn1 {
+.card:hover > .btn1 {
         background-color: #eaeaea;
         opacity: 1;
         transform: translate(-70%, -300%);
@@ -315,22 +495,24 @@ width: 60px;
     }
     
     
-    .btn2 {
+.btn2 {
         opacity: 0;
-        transform: translate(250%, -520%);
+        transform: translate(130%, -520%);
         height: 20px;
         width: 33px;
         color: black;
     }
     
-    .btn2>img {
+.btn2>img {
         transform: translate(-25%, -20%);
         height: inherit;
         width: inherit;
+        color: black;
+    
     }
     
     
-    .card:hover > .btn2 {
+.card:hover > .btn2 {
         opacity: 1;
         transform: translate(130%, -520%);
         height: 20px;
@@ -338,9 +520,14 @@ width: 60px;
         color: black;
     }
     
+.card:hover > .btn2>img {
+        opacity: 1;
+        color: black;
+    }
     
     
-    .btn3 {
+    
+.btn3 {
         opacity: 0;
         transform: translate(250%, -620%);
         height: 20px;
@@ -348,13 +535,13 @@ width: 60px;
         color: black;
     }
     
-    .btn3>img {
-        transform: translate(-25%, -20%);
+.btn3>img {
+        transform: translate(-20%, -1%);
         height: 100%;
         width: 150%;
     }
     
-    .card:hover > .btn3 {
+.card:hover > .btn3 {
         opacity: 1;
         transform: translate(250%, -620%);
         height: 20px;
@@ -363,11 +550,18 @@ width: 60px;
     }
     
     
-    .card_small {
+.card:hover > .btn3>img {
+        opacity: 1;
+        color: black;
+    }
+    
+    
+    
+.card_small {
         height: var(--card_small);
     }
     
-    .card_small >img{
+.card_small >img{
         border-radius: var(--card_border_radius);
         width: 100%;
         height: var(--card_small) ;
@@ -375,35 +569,37 @@ width: 60px;
     
     
     
-    .card_medium{
+.card_medium{
         
         height: var(--card_medium);
     }
     
-    .card_medium>img{
+.card_medium>img{
         border-radius: var(--card_border_radius);
         width: 100%;
         height: var(--card_medium);
-        /* border: 2px solid yellow;*/
+        /* border: 2px solid yellow; */
     }
     
     
     
-    
-    .card_large {
+.card_large {
         height: var(--card_large) ;
     } 
     
-    .card_large >img{
+.card_large >img{
         border-radius: var(--card_border_radius);
         width: 100%;
         height: var(--card_large) ;
     }
+    
+    
+    
 
 
-    @media screen and (min-width: 0px) and (max-width: 420px) {
+@media screen and (min-width: 0px) and (max-width: 420px) {
 
-        .home>button{
+.HomeButton>a>button{
             display: inline-block;
             background-color: black;
             border-radius: 15px;
@@ -413,7 +609,7 @@ width: 60px;
             margin: 0px;
         }
         
-        .home>a>button{
+.CreateButton>a>button{
             display: inline-block;
             background-color: black;
             border-radius: 15px;
@@ -424,35 +620,39 @@ width: 60px;
         }
 
 
-        .barra_busqueda{
+.Searchbar{
             width: 30%;
             display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: center;
+            font-family: "Font Awesome 5 Free"; 
+            font-weight: 900;
         }
         
-        .barra_busqueda>input{
+.Searchbar>input{
             display: inline-block;
             border-radius: 25px;
             padding: 7px 45px;
             width: 90%;
             background-color: whitesmoke;
             flex-direction: row;
+            font-family: "Font Awesome 5 Free"; 
+           font-weight: 900;
         }
 
         
 
     }
 
-    @media screen and (min-width: 0px) and (max-width: 750px) {
+@media screen and (min-width: 0px) and (max-width: 750px) {
 
-      .DevfLogo {
+.DevfLogo {
         height: 20px;
         width: 30px;
             }
 
- .InputComment{
+.InputComment{
                 height: 20%;
                 width: 95%;
                 display: block;
@@ -461,31 +661,39 @@ width: 60px;
             }
 
 
-        .EmojiIcon {
+.EmojiIcon {
          font-size:10px;
             }
 
                 
-       h2 {
+h2 {
         font-size: 14px;
        }
 
-       .ClickDetailRightIcons {
+.ClickDetailRightIcons {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;    
     }
-       .ClickDetailRightIconsTwo>button{
+
+.ClickDetailRightIconsTwo>button{
         padding: 3px;
     }
     
-    .ClickDetailRightIconsTwo>div>button{
+.ClickDetailRightIconsTwo>div>button{
         padding: 3px;
     }
     
-    .InputComment{
+.InputComment{
         height: 70%;
 
     }
+
+    
+.LoremIpsus {
+    display: none;
+}
+
+
     }

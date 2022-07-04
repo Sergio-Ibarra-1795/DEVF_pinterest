@@ -4,19 +4,19 @@ body {
 
 p{ 
     display: inline;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 i{
     display: inline; 
 }
 
-.top{
+.NavBar{
     display: flex;
     width: 100%;
     height: 80px;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background-color:rgba(255, 255, 255, 0.979);
     align-items: center;
     position: fixed;
@@ -26,13 +26,22 @@ i{
 
 .PintLogo{
     display: inline-block;
-    font-style: oblique;
-    color: aqua;
-    
 }
 
+.PintLogo > img{
+    height: 25px ;
+    width: 30px;
+}
 
-.home>button{
+.LeftButtons {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.HomeButton>a>button{
     display: inline-block;
     background-color: black;
     border-radius: 25px;
@@ -41,24 +50,28 @@ i{
     padding: 5px 6px;
 }
 
-.home>a>button{
+.CreateButton>a>button{
     display: inline-block;
-    background-color: black;
+    background-color: whitesmoke;
     border-radius: 25px;
-    color: white;
+    border: 1px solid white;
+    color: black;
     font-size: 16px;
+    font-weight: bold;
     padding: 5px 6px;
 }
 
-.barra_busqueda{
-    width: 70%;
+
+
+.Searchbar{
+    width: 80%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
-.barra_busqueda>input{
+.Searchbar>input{
     display: inline-block;
     border-radius: 25px;
     padding: 7px 45px;
@@ -68,7 +81,7 @@ i{
 }
 
 
-.IconosIzquierda{
+.LeftTopIcons{
     display: flex;
     flex-direction: row;
     justify-content:space-around;
@@ -86,7 +99,7 @@ i{
 }
 
 
-.pin_container {
+.PinContainer {
     margin: 80px 0 0 0;
     padding: 0;
     width: 100%;
@@ -98,6 +111,15 @@ i{
     justify-content: center;
 
     background-color: rgb(255, 255, 255);
+}
+
+
+.ImageandDescriptionContainer {
+    /* border: 3px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 
@@ -116,20 +138,11 @@ i{
 }
 
 
+
 .card >img{
     border-radius: var(--card_border_radius);
     width: 100%;
-    height: var(--card_large) ;
     /* border: 2px solid orange; */
-}
-
-
-.ImageContainer {
-    /* border: 3px solid red; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
 }
 
 
@@ -138,6 +151,52 @@ i{
     cursor: zoom-in;
 }
 
+/* 
+Class btnl correspond to save hover buttons for large cards */
+.btnl {
+    opacity: 0;
+    transform: translate(130%, -1040%);
+}
+
+
+.card:hover > .btnl {
+    background-color: #bd081d;
+    color: white;
+    opacity: 1;
+    transform: translate(100%, -640%);
+
+    font-size: 18px;
+    padding: 8px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    text-align: center;
+}
+
+
+/* Class btnm correspond to save hover buttons for medium cards  */
+.btnm {
+    opacity: 0;
+    transform: translate(100%, -800%);
+}
+
+.card:hover > .btnm {
+    background-color: #bd081d;
+    color: white;
+    opacity: 1;
+    transform: translate(100%, -500%);
+
+    font-size: 18px;
+    padding: 8px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    text-align: center;
+}
+
+
+
+/* Class btnmscorrespond to save hover buttons for small cards  */
 
 .btns {
     opacity: 0;
@@ -149,7 +208,7 @@ i{
     background-color: #bd081d;
     color: white;
     opacity: 1;
-    transform: translate(100%, -440%);
+    transform: translate(100%, -400%);
 
     font-size: 18px;
     padding: 8px 10px;
@@ -158,6 +217,7 @@ i{
     border-radius: 30px;
     text-align: center;
 }
+
 
 .btn1 {
     opacity: 0;
@@ -183,7 +243,7 @@ i{
 
 .btn2 {
     opacity: 0;
-    transform: translate(250%, -520%);
+    transform: translate(130%, -520%);
     height: 20px;
     width: 33px;
     color: black;
@@ -193,6 +253,8 @@ i{
     transform: translate(-25%, -20%);
     height: inherit;
     width: inherit;
+    color: black;
+
 }
 
 
@@ -201,6 +263,11 @@ i{
     transform: translate(130%, -520%);
     height: 20px;
     width: 33px;
+    color: black;
+}
+
+.card:hover > .btn2>img {
+    opacity: 1;
     color: black;
 }
 
@@ -215,7 +282,7 @@ i{
 }
 
 .btn3>img {
-    transform: translate(-25%, -20%);
+    transform: translate(-20%, -1%);
     height: 100%;
     width: 150%;
 }
@@ -227,6 +294,13 @@ i{
     width: 33px;
     color: black;
 }
+
+
+.card:hover > .btn3>img {
+    opacity: 1;
+    color: black;
+}
+
 
 
 .card_small {
@@ -270,7 +344,7 @@ i{
 
     @media screen and (min-width: 0px) and (max-width: 420px) {
 
-        .home>button{
+        .HomeButton>a>button{
             display: inline-block;
             background-color: black;
             border-radius: 15px;
@@ -280,7 +354,7 @@ i{
             margin: 0px;
         }
         
-        .home>a>button{
+        .CreateButton>a>button{
             display: inline-block;
             background-color: black;
             border-radius: 15px;
@@ -291,7 +365,7 @@ i{
         }
 
 
-        .barra_busqueda{
+        .Searchbar{
             width: 30%;
             display: flex;
             flex-direction: row;
@@ -301,7 +375,7 @@ i{
             font-weight: 900;
         }
         
-        .barra_busqueda>input{
+        .Searchbar>input{
             display: inline-block;
             border-radius: 25px;
             padding: 7px 45px;
